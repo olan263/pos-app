@@ -5,6 +5,8 @@
         "api/index.php": { "runtime": "vercel-php@0.7.2" }
     },
     "env": {
+        "APP_ENV": "production",
+        "APP_DEBUG": "false",
         "VIEW_COMPILED_PATH": "/tmp/storage/framework/views",
         "SESSION_DRIVER": "cookie",
         "LOG_CHANNEL": "stderr"
