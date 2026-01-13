@@ -1,7 +1,7 @@
 <?php
 
-// Memaksa PHP untuk tidak menampilkan peringatan deprecated
-error_reporting(E_ALL & ~E_DEPRECATED & ~E_STRICT);
-ini_set('display_errors', '0');
+// Paksa munculin error biar kita gak tebak-tebakan
+error_reporting(E_ALL);
+ini_set('display_errors', '1');
 
 require __DIR__ . '/../public/index.php';
