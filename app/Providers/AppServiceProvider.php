@@ -19,6 +19,11 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot(): void
     {
-        //
+        // Tambahkan ini untuk fix Read-only file system di Vercel
+        if (config('view.compiled') === '/tmp/storage/framework/views') {
+            if (!is_dir('/tmp/storage/framework/views')) {
+                mkdir('/tmp/storage/framework/views', 0755, true);
+            }
+        }
     }
 }
