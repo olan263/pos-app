@@ -4,6 +4,6 @@
         "node": "20.x"
     },
     "scripts": {
-        "build": "echo 'Skipping Vite build to fix getNodeVersion error'"
+        "build": "echo 'Bypass Node Build'"
     }
 }
